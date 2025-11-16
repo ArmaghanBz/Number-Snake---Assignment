@@ -29,7 +29,7 @@ public class PlayerHead : MonoBehaviour
     // smooth motion
     private float targetX;
     private float velocityX; 
-    public float smoothTime = 0.08f; // tweak for smoothness
+    public float smoothTime = 0.08f; 
 
     void Start()
     {
@@ -113,7 +113,6 @@ public class PlayerHead : MonoBehaviour
         }
         else if (other.CompareTag("end"))
         {
-            Debug.Log("Finish line reached");
             var fin = other.GetComponent<FinishLine>();
             if (fin != null) fin.ReachFinish();
         }

@@ -5,7 +5,7 @@ public class NumberChainManager : MonoBehaviour
 {
     public static NumberChainManager Instance { get; private set; }
 
-    public GameObject followerPrefab; // follower prefab with NumberFollower component
+    public GameObject followerPrefab; 
     public Transform followParent;
     public float sampleInterval = 0.02f;
     public float spacingSeconds = 0.35f;
